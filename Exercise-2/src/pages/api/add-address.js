@@ -9,7 +9,7 @@ export default function handler(req, res) {
     // try {
         const addressesData = fs.readFileSync(filePath);
         const addresses = JSON.parse(addressesData) ?? [];
-        const newAddress = newData[0];
+        const newAddress = newData[newData.length -1];
         addresses.push(newAddress);
 
         // Ghi dữ liệu đã được cập nhật vào tệp JSON

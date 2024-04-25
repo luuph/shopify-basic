@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "67051146e61cf33f6fc8c3829e75701b"
+name = "exercise-6"
+handle = "exercise-6"
+application_url = "https://nylon-holly-used-calculate.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "app-dev-whatsapp.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_product_listings,read_products,write_products"
+
+[auth]
+redirect_urls = [
+  "https://nylon-holly-used-calculate.trycloudflare.com/auth/callback",
+  "https://nylon-holly-used-calculate.trycloudflare.com/auth/shopify/callback",
+  "https://nylon-holly-used-calculate.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
